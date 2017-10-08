@@ -12,6 +12,11 @@
   width: ($col / 12 * 100) * 1%;
 }
 
+@mixin offset($offset: 1) {
+  // margföldum með "1%" til að breyta gildi í prósentu gildi
+  margin-left: ($offset / 12 * 100) * 1%;
+}
+
 .col {
   padding-right: $gutter / 2;
   padding-left: $gutter / 2;
@@ -30,6 +35,14 @@
 
   &-4 {
     @include columns(4);
+  }
+
+  &-3 {
+    @include columns(3);
+  }
+
+  &-2 {
+    @include columns(2);
   }
 
   &-1 {
@@ -66,4 +79,21 @@
 
 .offset {
   // todo útfæra offset
+
+  &-12 {
+    @include offset(12);
+  }
+
+  &-8 {
+    @include offset(8);
+  }
+
+  &-4 {
+    @include offset(4);
+  }
+
+  &-3 {
+    @include offset(3);
+  }
+
 }

@@ -1,0 +1,33 @@
+.header--subpage {
+  background-image: url(myndir/bg-subpage.jpg);
+  height: 500px;
+  background-size: cover;
+  max-width: 100%;
+  display: flex;
+
+  h1 {
+    align-self: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+}
+
+p {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 80px;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 80px;
+}
+
+.main--tilvitnun {
+  margin-top: 60px;
+}
