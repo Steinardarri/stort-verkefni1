@@ -160,6 +160,19 @@ main, header {
     font-weight: bold;
     margin-left: 10px; }
 
+p {
+  margin-top: 20px; }
+
+h2 {
+  margin-top: 80px;
+  font-weight: bold; }
+
+footer {
+  margin-top: 80px; }
+
+.main--tilvitnun {
+  margin-top: 60px; }
+
 footer ul li {
   text-align: center; }
 
@@ -186,3 +199,9 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.5rem; }
