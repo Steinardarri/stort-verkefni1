@@ -1,0 +1,49 @@
+  /* Forsíðumynd á forsíðuni. */
+  .header--frontpage {
+    background-image: url(myndir/bg.jpg);
+    height: 500px;
+    background-size: cover;
+    max-width: 100%;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+
+  h2 {
+  text-align: center;
+  }
+
+  h1 {
+  text-align: center;
+  }
+}
+  .heading--item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading--button {
+    border: solid grey 1px;
+    border-radius: 4px;
+    padding: 0.5em;
+    height: 2em;
+    background-color: grey;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    align-self: center;
+    cursor: auto pointer;
+  }
+
+
+  /* Check box og mynd á miðri forsíðu */
+.info {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  min-width: 50%;
+}
+
+.info---item {
+  display: flex;
+  flex-direction: column;
+}
