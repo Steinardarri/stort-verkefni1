@@ -1,16 +1,97 @@
 <!doctype html>
 <html class="grid" lang="is">
 
-<head>
-  <meta charset="utf-8">
-  <title>Stort Verkefni 1</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
-  <link rel="stylesheet" href="styleguide.css">
-  <link rel="stylesheet" href="grid.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Stort Verkefni 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="styleguide.css">
+    <!-- <link rel="stylesheet" href="grid.css"> -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-<body>
+  <body>
 
-</body>
+    <header class="col col-12 header header--subpage">
+      <h1 class="heading heading--one">
+        Kaupa</h1>
+    </header>
+
+    <main>
+      <form>
+        <div class="row">
+          <div class="col col-6 form">
+            <legend>Persónuupplýsingar</legend>
+            <label for="nafn">Nafn:
+              <input type=text id="nafn">
+            </label>
+            <label for="kennitala">Kennitala:
+              <input type=text placeholder="123456-7890" id="kennitala">
+            </label>
+
+            Kyn:
+            <input type=radio name="kyn" value="kona" id="k-kona">
+            <label for="k-kona">Kona</label>
+            <input type=radio name="kyn" value="karl" id="k-karl">
+            <label for="k-karl">Karl</label>
+            <input type=radio name="kyn" value="annad" id="k-annad">
+            <label for="k-annad">Annad</label>
+
+            <label for="simi">Sími:
+              <input type=tel placeholder="+354 812 3456" id="simi">
+            </label>
+            <label for="heimili">Heimilisfang:
+              <input type=text id="heimili">
+            </label>
+            <input type=checkbox id="skra">
+            <label for="skra">Skrá mig á póstlista</label>
+          </div>
+          <div class="col col-6 form">
+            <legend>Greiðsluupplýsingar</legend>
+            <label for="kortatypa">Greiða með:
+              <select id="kortatypa">
+                <option value="kreditkort" selected>Kreditkorti</option>
+                <option value="debitkort">Debittkorti</option>
+              </select>
+            </label>
+
+            <label for="kort-nafn">Nafn á korti:
+              <input type=text id="kort-nafn">
+            </label>
+
+            <label for="kort-numer">Kortanúmer:
+              <input type=text placeholder="5999-9999-9999-9999" id="kort-numer">
+            </label>
+
+            Gildistími:
+            <label for="man">Mán
+              <input type=number id="man" placeholder="1" min="1" max="12">
+            </label>
+            <label for="ar">Ár
+              <input type=number id="ar" placeholder="2017" min="2017">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <input type=submit name="panta" value="Panta" id="pontun">
+        </div>
+      </form>
+    </main>
+    <footer>
+      <section class="row">
+        <ul class="col col-2 offset-4">
+          <li>Fooþjónustan</li>
+          <li>123456</li>
+        </ul>
+        <ul class="col col-2">
+          <li>Opið 12–13 alla daga</li>
+          <li>Bargata 1</li>
+          <li>900 Foobar</li>
+        </ul>
+      </section>
+      <section>
+        <p>&copy; Fooþjónustan 2017</p>
+      </section>
+    </footer>
+  </body>
 </html>
