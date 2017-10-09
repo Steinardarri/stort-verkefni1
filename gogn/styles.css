@@ -246,3 +246,10 @@ h3 {
 .info---item {
   display: flex;
   flex-direction: column; }
+=======
+.form {
+  display: flex;
+  flex-direction: column; }
+
+.form > * {
+  margin: 20px 0; }
