@@ -1,0 +1,131 @@
+main {
+  overflow: hidden;
+}
+
+  /* Forsíðumynd á forsíðuni. */
+  .header--frontpage {
+    background-image: url(myndir/bg.jpg);
+    height: 1000px;
+    background-size: cover;
+    max-width: 100%;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+
+  h2 {
+    font-size: 21px;
+    margin: 9*$gutter 0 $gutter 0;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin: 0 0 $gutter 0;
+    font-weight: bold;
+  }
+}
+  .heading--items {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /* Check box og mynd á miðri forsíðu */
+.info {
+  display: flex;
+  flex-direction: row;
+  margin: 8*$gutter 0
+}
+
+.info--item {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.item--fact {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+
+  .item--text {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+    h3 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 2px 0 3*$gutter 0;
+      font-size: 16px;
+    }
+  }
+
+  img {
+    width: 1.5*$gutter;
+    height: 1.5*$gutter;
+  }
+}
+
+
+/* Umsagnir með mynd */
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1*$gutter;
+  justify-content: space-around;
+}
+
+.reviews--review {
+  max-width: 16*$gutter;
+  margin: 1*$gutter 0;
+  img {
+    border-radius: 50%;
+    max-width: 15*$gutter;
+    display: block;
+    margin: 0 auto;
+
+  }
+  h3 {
+    font-size: 21px;
+    margin: $gutter ;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    margin: 5px;
+  }
+
+  h5 {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+
+
+/* Eftir hverju ertu að bíða og kaupa takki */
+
+.kaupa {
+  margin-top: 4*$gutter;
+  text-align: center;
+  h3 {
+    text-align: center;
+    font-weight: bold;
+  }
+  button {
+    width: 8*$gutter;
+    margin: $gutter auto;
+
+  }
+}
