@@ -1,11 +1,15 @@
 .button {
-  background-color: #555;
-  color: #fff;
+  border: solid grey 1px;
   border-radius: 4px;
-  overflow: hidden;
+  padding: 0.5*$gutter;
+  height: auto;
+  background-color: grey;
+  font-size: 24px;
+  color: white;
+  align-self: center;
   cursor: pointer;
-  text-align: center;
-  width: 30%;
-  margin-left: 35%;
-  margin-right: 35%;
+}
+.button:hover {
+  background-color: black;
+  transition:background-color 250ms linear;
 }

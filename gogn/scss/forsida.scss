@@ -5,7 +5,7 @@ main {
   /* Forsíðumynd á forsíðuni. */
   .header--frontpage {
     background-image: url(myndir/bg.jpg);
-    height: 500px;
+    height: 1000px;
     background-size: cover;
     max-width: 100%;
     display: flex;
@@ -27,18 +27,6 @@ main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-  }
-
-  .heading--button {
-    border: solid grey 1px;
-    border-radius: 4px;
-    padding: 0.5*$gutter;
-    height: auto;
-    background-color: grey;
-    font-size: 24px;
-    color: white;
-    align-self: center;
-    cursor: pointer;
   }
 
 
@@ -124,6 +112,20 @@ main {
   }
 }
 
+
+
+/* Eftir hverju ertu að bíða og kaupa takki */
+
 .kaupa {
-  margin: 4*$gutter auto 0 auto;
+  margin-top: 4*$gutter;
+  text-align: center;
+  h3 {
+    text-align: center;
+    font-weight: bold;
+  }
+  button {
+    width: 8*$gutter;
+    margin: $gutter auto;
+
+  }
 }
