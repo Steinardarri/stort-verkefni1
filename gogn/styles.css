@@ -206,9 +206,29 @@ h2 {
 h3 {
   font-size: 1.5rem; }
 
+.kaupa {
+  justify-content: space-around; }
+
 .form {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 60px 0; }
+  .form * {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .form legend {
+    font-weight: bold; }
 
-.form > * {
-  margin: 20px 0; }
+.inp {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .inp-radio * > label {
+    margin-left: 2px; }
+  .inp-timi {
+    display: flex;
+    justify-content: space-between;
+    text-align: center; }
+    .inp-timi > * {
+      width: 20%; }
