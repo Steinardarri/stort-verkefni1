@@ -8,7 +8,12 @@
   color: white;
   align-self: center;
   cursor: pointer;
+
+  &-panta {
+    width: 100%;
+  }
 }
+
 .button:hover {
   background-color: black;
   transition:background-color 250ms linear;

@@ -12,7 +12,7 @@
 
   <body>
 
-    <header class="col col-12 header header--subpage">
+    <header class="header header--subpage">
       <h1 class="row heading heading--one">
         Kaupa</h1>
     </header>
@@ -35,7 +35,7 @@
             </div>
 
             <div class="inp-radio">
-              <legend>Kyn:</legend>
+              <div>Kyn:</div>
               <div>
                 <input type=radio name="kyn" value="kona" id="k-kona">
                 <label for="k-kona">Kona</label>
@@ -87,7 +87,7 @@
             </div>
 
             <div class="inp">
-              <legend>Gildistími:</legend>
+              <div>Gildistími:</div>
               <div class="inp-timi">
                 <label for="man">Mán</label>
                 <input type=number id="man" placeholder="1" min="1" max="12">
@@ -97,8 +97,10 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <input class="button" type=submit name="panta" value="Panta" id="pontun">
+        <div class="row takki">
+          <div class="col col-3">
+            <input class="button button-panta" type=submit name="panta" value="Panta" id="pontun">
+          </div>
         </div>
       </form>
     </main>
