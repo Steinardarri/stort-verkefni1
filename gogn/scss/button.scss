@@ -4,7 +4,6 @@
   padding: 0.5*$gutter;
   height: auto;
   background-color: grey;
-  font-size: 24px;
   color: white;
   align-self: center;
   cursor: pointer;
@@ -18,4 +17,8 @@
   background-color: #464646;
   border-color: #464646;
   transition:background-color 200ms linear, border-color 200ms linear;
+}
+
+a {
+  text-decoration: none;
 }

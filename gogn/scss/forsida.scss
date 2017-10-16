@@ -3,6 +3,12 @@ main {
 }
 
 
+
+/* Þegar allar 3 síðurnar fara undir 1200px þá myndast kantar sitt hvoru megin við
+ hana og nav barið ruglast aðeins. Ég held það tengist html.grid eitthvað
+ en það má endilega kíkja á þetta. */
+
+
   /* Forsíðumynd á forsíðuni. */
   @keyframes fadein {
     from { opacity: 0; }
@@ -38,11 +44,13 @@ main {
     font-weight: bold;
     animation: 1s fadein 2s ease-in;
   }
-
-  button {
+  .heading--items > a > button {
     animation: 1s fadein 3s ease-in;
+    font-size: 21px;
   }
 }
+
+
 
 
   /* Check box og mynd á miðri forsíðu */
@@ -86,41 +94,30 @@ main {
   }
 }
 
-@media (max-width: 1199px) {
-  .info {
-    display: flex;
-    flex-direction: column;
-  }
-  .info--item {
-    /* Þarf að skrifa eitthvað hér til að láta info--item 
-    ná yfir 12 colums en ekki 6. */
-  }
-}
+
 
 
 /* Umsagnir með mynd */
-
 .reviews {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin: 1*$gutter;
+  margin: 1*$gutter 0;
   justify-content: space-around;
 }
 
 .reviews--review {
-  max-width: 16*$gutter;
+  max-width: 13*$gutter;
   margin: 1*$gutter 0;
   img {
     border-radius: 50%;
-    max-width: 15*$gutter;
+    max-width: 13*$gutter;
     display: block;
     margin: 0 auto;
 
   }
   h3 {
     font-size: 21px;
-    margin: $gutter ;
+    margin: $gutter 0 ;
     text-align: center;
   }
 
@@ -141,7 +138,6 @@ main {
 
 
 /* Eftir hverju ertu að bíða og kaupa takki */
-
 .kaupa {
   margin-top: 4*$gutter;
   display: flex;
@@ -153,6 +149,49 @@ main {
   button {
     width: 8*$gutter;
     margin: $gutter auto;
+    font-size: 24px;
 
+  }
+}
+
+
+/* Síða 600-1199px */
+@media (max-width: 1199px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .info--item {
+    /* Þarf að skrifa eitthvað hér til að láta info--item
+    ná yfir 12 colums en ekki 6. */
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .reviews--review:nth-child(3) {
+    margin: $gutter 10*$gutter;
+  }
+}
+
+
+/* Síða minni en 600px */
+@media (max-width: 599px) {
+  .reviews {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews--review {
+    margin: 1*$gutter auto;
+    text-align: center;
+  }
+  .reviews--review:nth-child(3) {
+    margin: 1*$gutter auto;
   }
 }
