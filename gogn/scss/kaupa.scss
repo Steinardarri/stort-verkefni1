@@ -1,0 +1,43 @@
+.kaupa {
+  justify-content: space-around;
+  text-align: left;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: $gutter*3 0;
+
+  * {
+    margin-top: $gutter/4;
+    margin-bottom: $gutter/4;
+  }
+
+  legend {
+    font-weight: bold;
+  }
+}
+
+.inp {
+  display: flex;
+  flex-direction: column;
+
+  &-hlid {
+    * > label {
+      margin-left: 2px;
+    }
+  }
+
+  &-timi {
+    display: flex;
+    justify-content: space-between;
+
+    > input {
+      width: 30%;
+    }
+  }
+}
+
+.takki {
+  justify-content: center;
+}

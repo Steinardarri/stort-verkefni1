@@ -1,0 +1,66 @@
+.nav {
+  background-color: #111111;
+  width: 100%;
+  height: 3*$gutter;
+  position: fixed;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+}
+
+.nav--bar {
+  width: 100%;
+  margin: auto $gutter;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav--logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  a {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+
+  a:visited {
+    color: white;
+  }
+}
+
+.nav--links {
+  width: 2*$gutter;
+  height: 60px;
+  margin-right: 4*$gutter;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  align-items: flex-start;
+
+  a {
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-self: center;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+ .button {
+   height: auto;
+   width: 4*$gutter;
+   background-color: grey;
+   font-size: 18px;
+ }
+ .button:hover {
+   background-color: #111111;
+   transition:background-color 200ms linear, border-color 200ms linear;
+ }
+}

@@ -1,11 +1,24 @@
 .button {
-  background-color: #555;
-  color: #fff;
+  border: solid grey 1px;
   border-radius: 4px;
-  overflow: hidden;
+  padding: 0.5*$gutter;
+  height: auto;
+  background-color: grey;
+  color: white;
+  align-self: center;
   cursor: pointer;
-  text-align: center;
-  width: 30%;
-  margin-left: 35%;
-  margin-right: 35%;
+
+  &-panta {
+    width: 100%;
+  }
+}
+
+.button:hover {
+  background-color: #464646;
+  border-color: #464646;
+  transition:background-color 200ms linear, border-color 200ms linear;
+}
+
+a {
+  text-decoration: none;
 }
