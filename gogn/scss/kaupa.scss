@@ -1,9 +1,11 @@
-.kaupa {
+/* Snið á aðal röð */
+.kauparod {
   justify-content: space-around;
   text-align: left;
 }
 
-.form {
+/* Snið innan dálkanna */
+.formdalk {
   display: flex;
   flex-direction: column;
   margin: $gutter*3 0;
@@ -18,6 +20,7 @@
   }
 }
 
+/* Snið á inntaki */
 .inp {
   display: flex;
   flex-direction: column;
@@ -32,12 +35,13 @@
     display: flex;
     justify-content: space-between;
 
-    > input {
+    > select {
       width: 30%;
     }
   }
 }
 
-.takki {
+/* Snið á takka-röð*/
+.takkirod {
   justify-content: center;
 }
