@@ -1,3 +1,12 @@
+.fotarod {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: $max-width;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
 footer ul li {
   text-align: center;
 }
@@ -20,9 +29,4 @@ footer section:first-of-type:after {
   width: 90%;
   margin: 0 auto;
   margin-top: 20px;
-}
-
-.fotur {
-  align-items: center;
-  justify-content: space-around;
 }
