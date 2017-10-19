@@ -53,15 +53,15 @@
     color: #fff;
   }
 
- .button {
-   width: $gutter*4;
-   height: auto;
-   font-size: 18px;
-   background-color: #808080;
- }
+  .button {
+    width: $gutter*4;
+    height: auto;
+    font-size: 18px;
+    background-color: #808080;
+  }
 
- .button:hover {
-   background-color: #111;
-   transition:background-color 200ms linear, border-color 200ms linear;
- }
+  .button:hover {
+    background-color: #111;
+    transition: background-color 200ms linear, border-color 200ms linear;
+  }
 }
