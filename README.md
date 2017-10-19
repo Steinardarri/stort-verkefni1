@@ -25,8 +25,8 @@ Notaðu Nav barinn efst til að flakka á milli síðanna.
 
 ### Upplýsingar um hópinn
 
-* Ásdís sá um **Um** síðuna og <footer>
+* Ásdís sá um **Um** síðuna og footer
 
-* Birgir sá um **Forsíða** síðuna og <header>
+* Birgir sá um **Forsíða** síðuna og header
 
 * Steinar sá um **Kaupa** síðuna og uppsetningu verkefnisins
