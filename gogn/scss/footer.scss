@@ -23,7 +23,7 @@ footer {
   background-color: #383b3f;
 }
 
-footer section:first-of-type:after {
+footer section:first-of-type::after {
   width: 90%;
   margin: 0 auto;
   margin-top: 20px;

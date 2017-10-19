@@ -15,12 +15,12 @@ main {
 .header--frontpage {
   display: flex;
   max-width: 100%;
-  background-image: url(myndir/bg.jpg);
-  background-attachment: fixed;
   height: 100vh;
+  text-align: center;
+  background-image: url("myndir/bg.jpg");
+  background-attachment: fixed;
   background-size: cover;
   justify-content: center;
-  text-align: center;
 
   .heading--items {
     display: flex;
@@ -30,56 +30,49 @@ main {
   }
 
   h2 {
-    opacity: 0;
+    margin: 0 0 $gutter 0;
     font-size: 21px;
-    margin:0 0 $gutter 0;
+    opacity: 0;
     animation: 1s fadein 1s ease-in forwards;
-  }
-
-  h1 {
-    opacity: 0;
-    font-size: 48px;
-    margin:0 0 $gutter 0;
-    font-size: 21px;
-    animation: 1s fadein 1s ease-in;
   }
 
   h1 {
     margin: 0 0 $gutter 0;
     font-size: 48px;
     font-weight: bold;
+    opacity: 0;
     animation: 1s fadein 2s ease-in forwards;
   }
 
   .heading--items > a > button {
+    font-size: 21px;
     opacity: 0;
     animation: 1s fadein 3s ease-in forwards;
-    font-size: 21px;
   }
 }
 
-  /* Check box og mynd á miðri forsíðu */
+/* Check box og mynd á miðri forsíðu */
 .info {
   display: flex;
-  flex-direction: row;
   margin: $gutter*8 0;
+  flex-direction: row;
 }
 
 .info--item {
   display: flex;
+  padding: 0;
   flex-direction: column;
-  padding: 0px;
 }
 
 .item--fact {
   display: flex;
+  margin: 0;
   flex-direction: row;
-  margin: 0px;
 
   .item--text {
     display: flex;
-    flex-direction: column;
     margin: 5px;
+    flex-direction: column;
 
     h3 {
       margin: 0;
@@ -102,8 +95,8 @@ main {
 /* Umsagnir með mynd */
 .reviews {
   display: flex;
-  flex-direction: row;
   margin: $gutter 0;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -112,31 +105,28 @@ main {
   margin: $gutter 0;
 
   img {
-    border-radius: 50%;
-    max-width: $gutter*13;
     display: block;
+    max-width: $gutter*13;
     margin: 0 auto;
-
+    border-radius: 50%;
   }
 
   h3 {
+    margin: $gutter 0;
     font-size: 21px;
-    margin: $gutter 0 ;
     text-align: center;
   }
 
   h4 {
+    margin: 5px;
     font-size: 16px;
     font-weight: 600;
-    margin: 0;
-    margin: 5px;
   }
 
   h5 {
-    font-size: 14px;
     margin: 0;
+    font-size: 14px;
     text-align: center;
-
   }
 }
 
@@ -155,7 +145,6 @@ main {
     width: $gutter*8;
     margin: $gutter auto;
     font-size: 24px;
-
   }
 }
 
