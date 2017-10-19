@@ -4,8 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Stort Verkefni 1 - Forsíða</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="styleguide.css">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="styles.css">
@@ -20,7 +19,11 @@
           Í fyrsta skipti á Íslandi</h2>
         <h1 class="heading heading--one">
           Fooþjónustan</h1>
-        <a class="heading button" href="kaupa.html">Kaupa</a>
+        <a href="kaupa.html">
+          <button class="heading button">
+            Kaupa
+          </button>
+        </a>
       </div>
       <div class="nav">
         <div class="nav--bar">
@@ -88,32 +91,36 @@
 
       <div class="kaupa">
         <h3 class="kaupa--text">Eftir hverju ertu að bíða?</h3>
-        <a class="button" href="kaupa.html">Kaupa</a>
+        <a href="kaupa.html">
+          <button class="kaupa button">
+            Kaupa
+          </button>
+        </a>
       </div>
 
     </main>
-    <footer class="fotur">
-      <div class="fotarod">
+    <footer>
+      <section class="fotarod">
         <!-- Fokking vesen að hliðra að miðju, setti inn tóm div -->
-        <div class="col col-3 col-sm-2"></div>
-        <div class="col col-3 col-sm-4">
+        <div class="col col-3 col-med-2"></div>
+        <div class="col col-3 col-med-4">
           <ul>
             <li>Fooþjónustan</li>
             <li>123456</li>
           </ul>
         </div>
-        <div class="col col-3 col-sm-4">
+        <div class="col col-3 col-med-4">
           <ul>
             <li>Opið 12–13 alla daga</li>
             <li>Bargata 1</li>
             <li>900 Foobar</li>
           </ul>
         </div>
-        <div class="col col-3 col-sm-2"></div>
-      </div>
-      <div>
+        <div class="col col-3 col-med-2"></div>
+      </section>
+      <section>
         <p>&copy; Fooþjónustan 2017</p>
-      </div>
+      </section>
     </footer>
   </body>
 
