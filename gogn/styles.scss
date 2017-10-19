@@ -1,57 +1,141 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
+
+  &::after,
+  &::before {
+    content: "";
+    content: none;
+  }
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 // breytur fyrir mikið notaðar stærðir
 $max-width: 1200px;
 $gutter: 20px;
 
-/* setjum box-sizing: border-box; á allt */
-html { /* stylelint-disable-line */
-  box-sizing: border-box;
-}
+*,
+*::after,
+*::before {
 
-*, *:before, *:after { /* stylelint-disable-line */
+  /* stylelint-disable-line */
   box-sizing: inherit;
 
   /* fjarlægjum margin og padding */
@@ -59,35 +143,42 @@ html { /* stylelint-disable-line */
   margin: 0;
 }
 
-html { /* stylelint-disable-line */
+html {
+
+  /* stylelint-disable-line */
   // til þess að texti liggi ekki upp við brún á viewport þegar
   // við erum < 1200px breiðum skjá, setjum margin á báða kanta html
   // ruglar líka ekki í grid overlay
+
+  /* setjum box-sizing: border-box; á allt */
+
+  box-sizing: border-box;
   margin-right: $gutter;
   margin-left: $gutter;
-
   font-family: Lato, helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-
   @media (min-width: $max-width) {
     margin: 0;
   }
 }
 
-img { /* stylelint-disable-line */
+img {
+
+  /* stylelint-disable-line */
   max-width: 100%;
 }
 
-main, header { /* stylelint-disable-line */
+header,
+main {
+
+  /* stylelint-disable-line */
   max-width: $max-width;
   margin: 0 auto;
-
   // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
   // hér sem hidden, þá fáum við ekki lárétta skrunstiku
   overflow-x: hidden;
 }
-
 @import "scss/grid";
 @import "scss/header";
 @import "scss/heading";
