@@ -5,7 +5,7 @@
   background-image: url(myndir/bg-subpage.jpg);
   background-size: cover;
 
-  h1 {
+  .heading--one {
     align-self: center;
     margin-left: 10px;
     font-size: 3rem;
@@ -19,12 +19,12 @@ p {
   margin-top: $gutter;
 }
 
-h2 {
+.heading--two {
   margin-top: $gutter *4;
   font-weight: bold;
 }
 
-footer {
+.fotur {
   margin-top: $gutter *4;
 }
 
