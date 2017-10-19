@@ -1,3 +1,7 @@
+.fotur {
+  margin-top: $gutter *4;
+}
+
 .fotarod {
   display: flex;
   flex-wrap: wrap;
@@ -5,13 +9,14 @@
   max-width: $max-width;
   margin: 0 auto;
   overflow-x: hidden;
+
 }
 
 footer ul li {
   text-align: center;
 }
 
-footer section.row {
+footer div.row {
   margin-left: $gutter;
 }
 
@@ -23,7 +28,7 @@ footer {
   background-color: #383b3f;
 }
 
-footer section:first-of-type::after {
+footer div:first-of-type::after {
   width: 90%;
   margin: 0 auto;
   margin-top: 20px;

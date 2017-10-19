@@ -37,7 +37,7 @@
     animation: 1s fadein 2s ease-in forwards;
   }
 
-  .heading--items > a > button {
+  .heading--items > a {
     font-size: 21px;
     opacity: 0;
     animation: 1s fadein 3s ease-in forwards;
@@ -135,10 +135,11 @@
     font-weight: bold;
   }
 
-  button {
+  .button {
     width: $gutter*8;
     margin: $gutter auto;
     font-size: 24px;
+    text-align: center;
   }
 }
 

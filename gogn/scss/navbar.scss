@@ -34,9 +34,8 @@
 
 .nav--links {
   display: flex;
-  width: $gutter*2;
+  width: $gutter*7;
   height: 60px;
-  margin-right: $gutter*4;
   font-size: 18px;
   flex-direction: row;
   justify-content: space-between;
@@ -54,9 +53,11 @@
   }
 
   .button {
+    display: inline;
     width: $gutter*4;
     height: auto;
     font-size: 18px;
+    text-align: center;
     background-color: #808080;
   }
 
