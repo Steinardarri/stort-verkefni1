@@ -16,17 +16,18 @@ footer section.row {
 }
 
 footer {
-  background-color: #383b3f;
-  color: white;
   padding-top: 20px;
   padding-bottom: 20px;
+  color: #fff;
   text-align: center;
+  background-color: #383b3f;
 }
 
 footer section:first-of-type:after {
-  border-bottom: 1px solid white;
-  content: '';
   width: 90%;
   margin: 0 auto;
   margin-top: 20px;
+  content: "";
+  border-bottom: 1px solid #fff;
+
 }

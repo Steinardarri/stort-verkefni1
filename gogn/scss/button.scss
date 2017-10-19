@@ -1,12 +1,12 @@
 .button {
-  border: solid grey 1px;
-  border-radius: 4px;
-  padding: 0.5*$gutter;
   height: auto;
-  background-color: grey;
-  color: white;
-  align-self: center;
+  padding: $gutter*0.5;
+  color: #fff;
   cursor: pointer;
+  background-color: #808080;
+  border: solid #808080 1px;
+  border-radius: 4px;
+  align-self: center;
 
   &-panta {
     width: 100%;

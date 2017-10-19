@@ -2,35 +2,32 @@ main {
   overflow: hidden;
 }
 
-
-
 /* Þegar allar 3 síðurnar fara undir 1200px þá myndast kantar sitt hvoru megin við
  hana og nav barið ruglast aðeins. Ég held það tengist html.grid eitthvað
  en það má endilega kíkja á þetta. */
 
+/* Forsíðumynd á forsíðuni. */
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 0; }
+}
 
-  /* Forsíðumynd á forsíðuni. */
-  @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 0; }
-  }
+.header--frontpage {
+  background-image: url(myndir/bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 
-  .header--frontpage {
-    background-image: url(myndir/bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    max-width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-    .heading--items {
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+.heading--items {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
   h2 {
     font-size: 21px;
