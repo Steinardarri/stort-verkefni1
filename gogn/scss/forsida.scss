@@ -1,10 +1,3 @@
-main {
-  overflow: hidden;
-}
-
-/* Þegar allar 3 síðurnar fara undir 1200px þá myndast kantar sitt hvoru megin við
- hana og nav barið ruglast aðeins. Ég held það tengist html.grid eitthvað
- en það má endilega kíkja á þetta. */
 
 /* Forsíðumynd á forsíðuni. */
 @keyframes fadein {
@@ -29,14 +22,14 @@ main {
     justify-content: center;
   }
 
-  h2 {
+  .heading--two {
     margin: 0 0 $gutter 0;
     font-size: 21px;
     opacity: 0;
     animation: 1s fadein 1s ease-in forwards;
   }
 
-  h1 {
+  .heading--one {
     margin: 0 0 $gutter 0;
     font-size: 48px;
     font-weight: bold;
@@ -60,13 +53,13 @@ main {
 
 .info--item {
   display: flex;
-  padding: 0;
+  padding: $gutter*0;
   flex-direction: column;
 }
 
 .item--fact {
   display: flex;
-  margin: 0;
+  margin: $gutter*0;
   flex-direction: row;
 
   .item--text {
@@ -74,19 +67,19 @@ main {
     margin: 5px;
     flex-direction: column;
 
-    h3 {
+    .fact--heading {
       margin: 0;
       font-size: 24px;
       font-weight: bold;
     }
 
-    p {
+    .fact--text {
       margin: 2px 0 $gutter*3 0;
       font-size: 16px;
     }
   }
 
-  img {
+  .img--check {
     width: $gutter*1.5;
     height: $gutter*1.5;
   }
@@ -104,26 +97,27 @@ main {
   max-width: $gutter*13;
   margin: $gutter 0;
 
-  img {
+  .review--img {
     display: block;
     max-width: $gutter*13;
     margin: 0 auto;
     border-radius: 50%;
+
   }
 
-  h3 {
+  .review--quote {
     margin: $gutter 0;
     font-size: 21px;
     text-align: center;
   }
 
-  h4 {
+  .review--name {
     margin: 5px;
     font-size: 16px;
     font-weight: 600;
   }
 
-  h5 {
+  .review--time {
     margin: 0;
     font-size: 14px;
     text-align: center;
@@ -137,7 +131,7 @@ main {
   flex-direction: column;
   align-items: center;
 
-  h3 {
+  .kaupa--text {
     font-weight: bold;
   }
 
