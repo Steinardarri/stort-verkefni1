@@ -9,7 +9,7 @@ main {
 /* Forsíðumynd á forsíðuni. */
 @keyframes fadein {
   from { opacity: 0; }
-  to { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .header--frontpage {
@@ -30,19 +30,22 @@ main {
 }
 
   h2 {
+    opacity: 0;
     font-size: 21px;
     margin:0 0 $gutter 0;
-    animation: 1s fadein 1s ease-in;
+    animation: 1s fadein 1s ease-in forwards;
   }
 
   h1 {
+    opacity: 0;
     font-size: 48px;
     margin: 0 0 $gutter 0;
     font-weight: bold;
-    animation: 1s fadein 2s ease-in;
+    animation: 1s fadein 2s ease-in forwards;
   }
   .heading--items > a > button {
-    animation: 1s fadein 3s ease-in;
+    opacity: 0;
+    animation: 1s fadein 3s ease-in forwards;
     font-size: 21px;
   }
 }
