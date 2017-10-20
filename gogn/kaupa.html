@@ -33,18 +33,18 @@
     <main>
       <form>
         <div class="row kauparod">
-          <fieldset class="formdalk col col-4 col-sm-12">
-            <legend class="legend">Persónuupplýsingar</legend>
+          <div class="formdalk col col-4 col-med-6 col-sm-12">
+            <h2 class="legend">Persónuupplýsingar</h2>
 
-            <div class="inp">
+            <fieldset class="inp">
               <label for="nafn">Nafn:</label>
-              <input type=text id="nafn">
-            </div>
+              <input name="nafn" class="inp-bar" type=text id="nafn" value="">
+            </fieldset>
 
-            <div class="inp">
+            <fieldset class="inp">
               <label for="kennitala">Kennitala:</label>
-              <input type=text placeholder="123456-7890" id="kennitala">
-            </div>
+              <input name="kennitala" class="inp-bar" type=text placeholder="123456-7890" id="kennitala" value="">
+            </fieldset>
 
             <fieldset class="inp-hlid">
               <legend class="kyn">Kyn:</legend>
@@ -62,50 +62,48 @@
               </div>
             </fieldset>
 
-            <div class="inp">
+            <fieldset class="inp">
               <label for="simi">Sími:</label>
-              <input type=tel placeholder="+354 812 3456" id="simi">
-            </div>
+              <input name="simi" class="inp-bar" type=tel placeholder="+354 812 3456" id="simi" value="">
+            </fieldset>
 
-            <div class="inp">
+            <fieldset class="inp">
               <label for="heimili">Heimilisfang:</label>
-              <input type=text id="heimili">
-            </div>
+              <input name="heimili" class="inp-bar" type=text id="heimili" value="">
+            </fieldset>
 
-            <div class="inp-hlid">
-              <div>
-                <input type=checkbox id="skra" checked>
-                <label for="skra">Skrá mig á póstlista</label>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="formdalk col col-4 col-sm-12">
-            <legend class="legend">Greiðsluupplýsingar</legend>
+            <fieldset class="inp-hlid">
+              <input name="postur" type=checkbox id="postur" value="skra" checked>
+              <label for="postur">Skrá mig á póstlista</label>
+            </fieldset>
+          </div>
+          <div class="formdalk col col-4 col-med-6 col-sm-12">
+            <h2 class="legend">Greiðsluupplýsingar</h2>
 
-            <div class="inp">
+            <fieldset class="inp">
               <label for="kortatypa">Greiða með:</label>
-              <select id="kortatypa">
+              <select class="inp-bar" name="kortatypa" id="kortatypa">
                 <option value="kreditkort" selected>Kreditkorti</option>
                 <option value="millifaerslu">Millifærslu</option>
                 <option value="reidufe">Reiðufé</option>
               </select>
-            </div>
+            </fieldset>
 
-            <div class="inp">
+            <fieldset class="inp">
               <label for="kort-nafn">Nafn á korti:</label>
-              <input type=text id="kort-nafn">
-            </div>
+              <input name="kort-nafn" class="inp-bar" type=text id="kort-nafn" value="">
+            </fieldset>
 
-            <div class="inp">
+            <fieldset class="inp">
               <label for="kort-numer">Kortanúmer:</label>
-              <input type=text placeholder="5999-9999-9999-9999" id="kort-numer">
-            </div>
+              <input name="kort-numer" class="inp-bar" type=text placeholder="5999-9999-9999-9999" id="kort-numer" value="">
+            </fieldset>
 
-            <div class="inp">
-              <div>Gildistími:</div>
+            <fieldset class="inp">
+              <legend>Gildistími:</legend>
               <div class="inp-timi">
                 <label for="man">Mán</label>
-                <select class="" id="man">
+                <select id="man" name="kort-man">
                   <option value="01" selected>01</option>
                   <option value="02">02</option>
                   <option value="03">03</option>
@@ -119,16 +117,16 @@
                   <option value="11">11</option>
                   <option value="12">12</option>
                 </select>
-                <label class="" for="ar">Ár</label>
-                <select id="ar">
+                <label for="ar">Ár</label>
+                <select id="ar" name="kort-ar">
                   <option value="2017" selected>2017</option>
                   <option value="2018">2018</option>
                   <option value="2019">2019</option>
                   <option value="2020">2020</option>
                 </select>
               </div>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
         </div>
         <div class="row takkirod">
           <div class="col col-3">
@@ -138,25 +136,25 @@
       </form>
     </main>
     <footer class="fotur">
-      <div class="fotarod">
+      <div class="fotarod fotarod-efri">
         <!-- Fokking vesen að hliðra að miðju, setti inn tóm div -->
-        <div class="col col-3 col-sm-2"></div>
-        <div class="col col-3 col-sm-4">
+        <div class="col col-3 col-med-2 col-sm-0"></div>
+        <div class="col col-3 col-med-4 col-sm-6 fotarod-texti">
           <ul>
             <li>Fooþjónustan</li>
             <li>123456</li>
           </ul>
         </div>
-        <div class="col col-3 col-sm-4">
+        <div class="col col-3 col-med-4 col-sm-6 fotarod-texti">
           <ul>
             <li>Opið 12–13 alla daga</li>
             <li>Bargata 1</li>
             <li>900 Foobar</li>
           </ul>
         </div>
-        <div class="col col-3 col-sm-2"></div>
+        <div class="col col-3 col-med-2 col-sm-0"></div>
       </div>
-      <div>
+      <div class="fotarod fotarod-nedri">
         <p>&copy; Fooþjónustan 2017</p>
       </div>
     </footer>

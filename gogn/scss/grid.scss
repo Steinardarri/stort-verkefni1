@@ -110,6 +110,10 @@
         @include columns(1);
       }
 
+      &-0 {
+        @include columns(0);
+      }
+
     }
   }
 

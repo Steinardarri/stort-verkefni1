@@ -1,26 +1,5 @@
 .fotur {
-  margin-top: $gutter *4;
-}
-
-.fotarod {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: $max-width;
-  margin: 0 auto;
-  overflow-x: hidden;
-
-}
-
-footer ul li {
-  text-align: center;
-}
-
-footer div.row {
-  margin-left: $gutter;
-}
-
-footer {
+  margin-top: $gutter*4;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
@@ -28,11 +7,34 @@ footer {
   background-color: #383b3f;
 }
 
-footer div:first-of-type::after {
+.fotarod {
+  display: flex;
+  justify-content: space-around;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  &-efri {
+    margin-bottom: $gutter*2;
+    align-items: flex-start;
+  }
+
+  &-texti {
+    text-align: center;
+  }
+
+  &-nedri {
+    width: 90%;
+    border-top: 1px solid #fff;
+    font-size: 12px;
+    color: #aaa;
+  }
+}
+
+/* footer div:first-of-type::after {
   width: 90%;
   margin: 0 auto;
   margin-top: 20px;
   content: "";
   border-bottom: 1px solid #fff;
-
-}
+} */
